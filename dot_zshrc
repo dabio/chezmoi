@@ -1,3 +1,6 @@
+# enable the default zsh completions!
+autoload -Uz compinit && compinit
+
 path+=(~/.local/bin)
 path+=(~/go/bin)
 
