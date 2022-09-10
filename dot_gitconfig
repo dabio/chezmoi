@@ -1,7 +1,7 @@
 [user]
 	email = dabio@users.noreply.github.com
 	name = danilo
-	signingkey = 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGWeKdePVe0elY44cjLq8V3JQHLG4zcAdYqMg6VpeIih dabio@12inch'
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGWeKdePVe0elY44cjLq8V3JQHLG4zcAdYqMg6VpeIih dabio@12inch
 [init]
 	defaultBranch = main
 [pull]
