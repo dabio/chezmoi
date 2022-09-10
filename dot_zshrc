@@ -1,4 +1,7 @@
 path+=(~/.local/bin)
+path+=(~/go/bin)
+
+export GOPATH=~/go
 
 alias ll="ls -la"
 
