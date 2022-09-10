@@ -1,0 +1,5 @@
+path+=(~/.local/bin)
+
+alias ll="ls -la"
+
+eval "$(direnv hook zsh)"

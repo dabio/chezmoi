@@ -1,0 +1,7 @@
+[user]
+	email = dabio@users.noreply.github.com
+	name = danilo
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
