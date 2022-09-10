@@ -1,0 +1,28 @@
+[".vim/pack/chezmoi/opt/nord-vim"]
+    type = "git-repo"
+    url = "https://github.com/arcticicestudio/nord-vim.git"
+    refreshPeriod = "168h"
+[".vim/pack/chezmoi/start/lexima"]
+    type = "git-repo"
+    url = "https://github.com/cohama/lexima.vim.git"
+    refreshPeriod = "168h"
+[".vim/pack/chezmoi/start/ctrlp"]
+    type = "git-repo"
+    url = "https://github.com/ctrlpvim/ctrlp.vim.git"
+    refreshPeriod = "168h"
+[".vim/pack/chezmoi/start/lightline"]
+    type = "git-repo"
+    url = "https://github.com/itchyny/lightline.vim.git"
+    refreshPeriod = "168h"
+[".vim/pack/chezmoi/start/signify"]
+    type = "git-repo"
+    url = "https://github.com/mhinz/vim-signify.git"
+    refreshPeriod = "168h"
+[".vim/pack/chezmoi/start/neoformat"]
+    type = "git-repo"
+    url = "https://github.com/sbdchd/neoformat.git"
+    refreshPeriod = "168h"
+[".vim/pack/chezmoi/start/ale"]
+    type = "git-repo"
+    url = "https://github.com/dense-analysis/ale.git"
+    refreshPeriod = "168h"

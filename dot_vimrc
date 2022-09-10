@@ -1,0 +1,119 @@
+source $VIMRUNTIME/defaults.vim
+
+" Use "hybrid" (both absolute and relative) line numbers
+set number relativenumber
+
+set colorcolumn=78
+
+" Set new mapleader default key.
+let mapleader=","
+
+" searching
+set ignorecase
+set smartcase
+set showmatch
+set hlsearch
+
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+"set visualbell
+"set cursorline
+set ttyfast
+
+" vim feels more natural when split windows below and right
+set splitbelow
+set splitright
+
+" don't use swapfile
+set noswapfile
+set nowritebackup
+
+" we show the mode with lightline
+set noshowmode
+set laststatus=2
+
+set lazyredraw
+
+" jump between split windows with ctrl-h,j,k,l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" remove search highlight
+nnoremap <leader><space> :nohlsearch<CR>
+" center the screen
+nnoremap <space> zz
+
+" do not show stupid q: window
+nnoremap q: :q
+
+" allow saving of files as sudo when I forgot to start vim using sudo
+cnoremap w!! w !sudo tee > /dev/null %
+
+" fast saving
+nmap <leader>w :w!<CR>
+
+if !empty(&viminfo)
+  set viminfo^=!
+endif
+
+" plugins
+function! s:StripTrailingWhitespace(...)
+  if !&binary && &filetype != 'diff'
+    let l:saved_winview = winsaveview()
+    keeppatterns %s/\v\s+$//e
+    call winrestview(l:saved_winview)
+  endif
+endfunction
+
+if has('autocmd')
+  augroup vimrc
+    " done within defaults.vim
+    "filetype plugin indent on
+
+    au!
+    " Re-source .vimrc on save so changes are effective immediately:
+    au BufWritePost vimrc nested source %
+
+    " save when losing the focus
+    au FocusLost * :wa
+  augroup END
+
+  augroup syntax
+    au!
+
+    " syntax highlighting for .md files
+    au BufRead,BufNewFile *.md set filetype=markdown
+    " syntax highlighting for .conf files
+    au BufRead,BufNewFile *.conf set filetype=conf
+  augroup END
+
+  augroup plugins
+    au!
+
+    " =========== plugin clean whitespaces ===========
+    au BufWritePre * call s:StripTrailingWhitespace()
+  augroup END
+
+  augroup numbertoggle
+    au!
+
+    au BufEnter,FocusGained,InsertLeave * set relativenumber
+    au BufLeave,FocusLost,InsertEnter * set norelativenumber
+  augroup END
+
+  augroup fmt
+    au!
+
+    autocmd BufWritePre * undojoin | Neoformat
+  augroup END
+endif
+
+if has('syntax') && !exists('g:syntax_on')
+  syntax enable
+endif
+
+colorscheme nord
