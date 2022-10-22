@@ -1,7 +1,7 @@
 [user]
 	email = dabio@users.noreply.github.com
 	name = danilo
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGWeKdePVe0elY44cjLq8V3JQHLG4zcAdYqMg6VpeIih dabio@12inch
+	signingkey = 0x33A9AAC414103B93
 [init]
 	defaultBranch = main
 [pull]
@@ -10,3 +10,7 @@
 	gpgsign = true
 [tag]
 	gpgsign = true
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = /Users/dan/.gitignore
