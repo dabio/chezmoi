@@ -12,3 +12,6 @@ brew "flyctl"
 brew "chezmoi"
 brew "pinentry-mac"
 brew "tig"
+
+mas "Magnet", id: 441258766
+mas "CotEditor", id: 1024640650
