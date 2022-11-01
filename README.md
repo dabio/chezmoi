@@ -31,6 +31,10 @@ Create new Admin-User (`adm`). Login once and create normal user (`dan`). Switch
    $ brew analytics off
    $ brew update
    ~~~
+3. Generate ssh key (no password(
+   ~~~bash
+   $ ssh-keygen -t ed25519 -C "dabio@users.noreply.github.com"
+   ~~~
 3. Install `chezmoi` and dotfiles:
    ~~~bash
    $ brew install chezmoi
