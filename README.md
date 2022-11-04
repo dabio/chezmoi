@@ -21,13 +21,12 @@ Create new Admin-User (`adm`). Login once and create normal user (`dan`). Switch
    $ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setloggingmode on
    $ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
    $ sudo pkill -HUP socketfilterfw
+   # add to sudoers file
+   $ echo 'dan ALL = (ALL) ALL' | sudo tee /etc/sudoers.d/dan > /dev/null
    ~~~
 
 2. [Install Homebrew](https://brew.sh) as normal user:
    ~~~bash
-   $ cd ~
-   $ mkdir .homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C .homebrew
-   $ export PATH=~/.homebrew/bin:~/.homebrew/sbin:$PATH
    $ brew analytics off
    $ brew update
    ~~~
