@@ -16,3 +16,4 @@ brew "direnv"
 
 mas "Magnet", id: 441258766
 mas "CotEditor", id: 1024640650
+mas "Pages", id: 409201541
