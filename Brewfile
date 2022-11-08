@@ -15,7 +15,7 @@ brew "pinentry-mac"
 brew "tig"
 brew "direnv"
 brew "helix"
-brew "taplo"
+brew "taplo"		# toml lsp for helix
 
 mas "Magnet", id: 441258766
 mas "CotEditor", id: 1024640650
