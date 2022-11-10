@@ -3,3 +3,7 @@ theme = "nord"
 [editor]
 line-number = "relative"
 rulers = [79, 119]
+color-modes = true
+
+[editor.cursor-shape]
+insert = "underline"
