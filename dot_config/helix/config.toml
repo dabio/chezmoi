@@ -1,9 +1,11 @@
 theme = "nord"
 
 [editor]
-line-number = "relative"
+# line-number = "relative"
 rulers = [79, 119]
 color-modes = true
+auto-save = true
+bufferline = "multiple"
 
 [editor.cursor-shape]
 insert = "underline"

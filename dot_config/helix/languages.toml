@@ -1,3 +1,7 @@
 [[language]]
 name = "go"
 formatter = { command = "gofumpt", args = ["-extra"] }
+
+[[language]]
+name = "python"
+auto-format = true
