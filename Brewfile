@@ -1,3 +1,4 @@
+cask "appzapper"
 cask "bluesnooze"
 cask "hot"
 cask "iterm2"
@@ -14,6 +15,7 @@ brew "go"
 brew "gofumpt"
 brew "gopls"
 brew "helix"
+brew "mas"
 brew "pinentry-mac"
 brew "taplo"		# toml lsp for helix
 brew "tig"
