@@ -5,7 +5,7 @@ path+=(~/.local/bin)
 path+=(~/go/bin)
 
 export GOPATH=~/go
-export EDITOR=/usr/local/bin/hx
+export EDITOR=/opt/homebrew/bin/hx
 
 alias ll="ls -la"
 
