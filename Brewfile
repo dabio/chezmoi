@@ -1,5 +1,6 @@
 cask "appzapper"
 cask "bluesnooze"
+cask "calibre"
 cask "hot"
 cask "iterm2"
 cask "mullvadvpn"
@@ -24,3 +25,4 @@ brew "tree-sitter"
 # mas "Magnet", id: 441258766
 mas "CotEditor", id: 1024640650
 mas "Pages", id: 409201541
+mas "Numbers", id: 409203825

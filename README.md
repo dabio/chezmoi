@@ -43,3 +43,8 @@ Create new Admin-User (`adm`). Login once and create normal user (`dan`). Switch
    ~~~bash
    $ brew bundle
    ~~~
+5. Misc:
+   - Disable Spotlight Search Categories
+   - [Download Apple Fonts](https://developer.apple.com/fonts/) (SF Mono)
+   - Set SF Mono as default for iTerm2
+   

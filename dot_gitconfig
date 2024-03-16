@@ -8,11 +8,11 @@
 	defaultBranch = main
 [pull]
 	rebase = false
-[commit]
-	gpgsign = true
+# [commit]
+	# gpgsign = true
 [tag]
 	gpgsign = true
-# [credential]
-	# helper = osxkeychain
+[credential]
+	helper = osxkeychain
 [core]
 	excludesfile = /Users/dan/.gitignore
