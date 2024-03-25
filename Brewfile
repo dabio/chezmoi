@@ -6,6 +6,7 @@ cask "iterm2"
 cask "mullvadvpn"
 cask "spotify"
 cask "sublime-text"
+cask "tidal"
 cask "tiles"
 
 brew "chezmoi"
