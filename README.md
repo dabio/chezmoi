@@ -18,7 +18,6 @@ Create new Admin-User (`adm`). Login once and create normal user (`dan`). Switch
    $ sudo scutil --set LocalHostName 12inch
    # enable firewall with logging and stealth mode
    $ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
-   $ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setloggingmode on
    $ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
    $ sudo pkill -HUP socketfilterfw
    # add to sudoers file
