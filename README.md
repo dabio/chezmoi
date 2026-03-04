@@ -43,3 +43,9 @@ Create new Admin-User (`adm`). Login once and create normal user (`dan`). Switch
    ~~~bash
    $ brew bundle
    ~~~
+5. Install MacPorts
+   https://www.macports.org/install.php
+   ~~~bash
+   sudo port selfupdate
+   sudo port install direnv go gopls tree-sitter
+   ~~~
